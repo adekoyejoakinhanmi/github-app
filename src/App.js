@@ -8,7 +8,7 @@ import User from './components/users/User';
 
 import About from './components/pages/About';
 import Home from './components/pages/Home';
-import Notfound from './components/pages/NotFound';
+import NotFound from './components/pages/NotFound';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -33,7 +33,7 @@ const App = () => {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/user/:login" component={User} /> 
-                <Route component={Notfound} />
+                <Route component={NotFound} />
               </Switch>
             </div>
           </div>
